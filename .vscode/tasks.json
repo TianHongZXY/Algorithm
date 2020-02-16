@@ -9,7 +9,7 @@
             "command": "g++",
             "args": [
                 "-g",
-                "${workspaceRoot}/main.cpp", // 这里是你自己的源文件的名字
+                "${workspaceRoot}/1-6-2.cpp", // 这里是你自己的源文件的名字
                 // "${workspaceRoot}/1-1.cpp", // 这也是源文件的名字，如果你有多个的话，都列上
                 "-o",
                 "${workspaceRoot}/a.out"
