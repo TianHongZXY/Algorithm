@@ -3,9 +3,9 @@
 using namespace std;
 
 const int MAX_N = 100;
-int L, n, a[MAX_N];
+int L, n;
 
-int solve(){
+int solve(int *a){
     int min_res = 0;
     int max_res = 0;
         for (int j = 0; j < n; j++){
@@ -16,8 +16,13 @@ int solve(){
     return 0;
 }
 int main(){
-    scanf("%d %d", &L, &n);
-    for (int i = 0; i < n; i++)
-        scanf("%d", &a[i]);
-    solve();
+    int num_cases;
+    scanf("%d", &num_cases);
+    for (int j = 0; j < num_cases; j++){
+        scanf("%d %d", &L, &n);
+        int a[n];
+        for (int i = 0; i < n; i++)
+            scanf("%d", &a[i]);
+        solve(a);
+    }
 }
