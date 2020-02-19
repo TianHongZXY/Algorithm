@@ -1,3 +1,7 @@
 /.vscode/*
 a.out.dSYM
 a.out
+/c++ primer/*
+!/c++ primer/*.cpp
+/挑战程序设计竞赛/*
+!/挑战程序设计竞赛/*.cpp
