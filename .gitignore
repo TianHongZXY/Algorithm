@@ -3,5 +3,7 @@ a.out.dSYM
 a.out
 /c++ primer/chapter ?/*
 !/c++ primer/chapter ?/*.cpp
+!/c++ primer/chapter ?/*.cc
+!/c++ primer/chapter ?/*.h
 /挑战程序设计竞赛/chapter ?/*
 !/挑战程序设计竞赛/chapter ?/*.cpp
