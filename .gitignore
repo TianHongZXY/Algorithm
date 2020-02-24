@@ -7,3 +7,5 @@ a.out
 !/c++ primer/chapter ?/*.h
 /挑战程序设计竞赛/chapter ?/*
 !/挑战程序设计竞赛/chapter ?/*.cpp
+/.idea/*
+/cmake-build-debug/*
