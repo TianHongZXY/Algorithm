@@ -1,2 +1,8 @@
 
 add_executable(const_qualifier "c++ primer/chapter 2/const_qualifier.cpp")
+add_executable(POJ-3617_Best_Cow_Line "挑战程序设计竞赛/chapter 2/POJ-3617_Best_Cow_Line.cpp")
+add_executable(2-1-2_stack "挑战程序设计竞赛/chapter 2/2-1-2_stack.cpp" "挑战程序设计竞赛/chapter 2/POJ-3069_Saruman_Army.cpp")
+add_executable(POJ-3069_Saruman_Army "挑战程序设计竞赛/chapter 2/POJ-3069_Saruman_Army.cpp")
+add_executable(POJ-3253_Fence_Repair "挑战程序设计竞赛/chapter 2/POJ-3253_Fence_Repair.cpp")
+add_executable(2-3-1_dp "挑战程序设计竞赛/chapter 2/2-3-1_dp.cpp")
+add_executable(2-3-1_LCS "挑战程序设计竞赛/chapter 2/2-3-1_LCS.cpp")

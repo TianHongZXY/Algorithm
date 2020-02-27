@@ -11,7 +11,7 @@ void solve(){
     int ans = 0;
     while (a <= b){
         bool left = false;
-        for (int i = 0; a + i <= b; i++)
+        for (int i = 0; i <= b - a; i++)
             if (S[a + i] < S[b - i]){
                 left = true;
                 break;

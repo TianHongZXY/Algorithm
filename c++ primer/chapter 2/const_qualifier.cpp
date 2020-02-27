@@ -1,6 +1,10 @@
 #include <iostream>
+#include <cstdio>
 using namespace std;
 
+constexpr int size(int i){
+    return i * 9;
+}
 
 int main(int argc, char const *argv[])
 {
@@ -72,10 +76,19 @@ int main(int argc, char const *argv[])
     cout << q << endl;
     q = 9; // q is still plain int
 
-    const int *p1 = &q;
+    const int *p1;
     const int *const p2 = &r;
     p1 = p2; // p2 is a const pointer, p1 copies p2's value, e.g. r's address
     p1 = &q; // p1 is still a plain pointer
+
+    const int *p4;
+    p4 = &r; // ok: we can convert
+//    int *const p3 = p2; // low-level const can't be ignored
+    const int *p3 = p2;   // ok: top-level *const is ignored
+
+    constexpr int mf = 20;
+    constexpr int limit = mf + 1;
+    constexpr int sz = size(10);
 
     return 0;
 }
