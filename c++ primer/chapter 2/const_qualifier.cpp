@@ -6,6 +6,8 @@ constexpr int size(int i){
     return i * 9;
 }
 
+constexpr int Q = 42;
+
 int main(int argc, char const *argv[])
 {
     const int bufSize = 512;
@@ -89,6 +91,10 @@ int main(int argc, char const *argv[])
     constexpr int mf = 20;
     constexpr int limit = mf + 1;
     constexpr int sz = size(10);
+    cout << sz << endl;
+    const int *ppp = &mf;
+    constexpr int *cxprp = 0;
+    constexpr const int *ccp = &Q;
 
     return 0;
 }

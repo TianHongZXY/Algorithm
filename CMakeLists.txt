@@ -6,3 +6,5 @@ add_executable(POJ-3069_Saruman_Army "挑战程序设计竞赛/chapter 2/POJ-306
 add_executable(POJ-3253_Fence_Repair "挑战程序设计竞赛/chapter 2/POJ-3253_Fence_Repair.cpp")
 add_executable(2-3-1_dp "挑战程序设计竞赛/chapter 2/2-3-1_dp.cpp")
 add_executable(2-3-1_LCS "挑战程序设计竞赛/chapter 2/2-3-1_LCS.cpp")
+add_executable(Types "c++ primer/chapter 2/Types.cpp")
+add_executable(struct "c++ primer/chapter 2/Sales_data.cpp")
