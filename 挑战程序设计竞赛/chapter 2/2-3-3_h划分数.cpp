@@ -2,7 +2,7 @@
 // Created by TianHongZXY on 2020/3/7.
 //
 #include <iostream>
-#include "string.h"
+#include <cstring>
 using namespace std;
 int n, m, M;
 

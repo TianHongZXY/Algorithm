@@ -2,7 +2,7 @@
 // Created by TianHongZXY on 2020/3/6.
 //
 #include <iostream>
-#include "string.h"
+#include <cstring>
 using namespace std;
 int n, K;
 const int MAX_N = 100, MAX_K = 100000;
