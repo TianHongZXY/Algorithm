@@ -14,6 +14,7 @@ int main(){
         printf("%d ", a[i]);
     printf("%d\n", a[0]);
 
-    int
+    int b[10];
+
     return 0;
 }
