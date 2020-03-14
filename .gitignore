@@ -9,3 +9,6 @@ a.out
 !/挑战程序设计竞赛/chapter ?/*.cpp
 /.idea/*
 /cmake-build-debug/*
+/aoapc-bac2nd/chapter ?/*
+!/aoapc-bac2nd/chapter ?/*.c
+aoapc-bac2nd/chapter ?/*.txt
