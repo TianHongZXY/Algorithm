@@ -12,4 +12,4 @@ a.out
 /aoapc-bac2nd/chapter ?/*
 !/aoapc-bac2nd/chapter ?/*.c
 !/aoapc-bac2nd/chapter ?/*.cpp
-!/aoapc-bac2nd/chapter ?/*.txt
+*.txt
