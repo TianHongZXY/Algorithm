@@ -4,6 +4,7 @@
 #include <vector>
 #include <string>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 int main(){
@@ -39,9 +40,34 @@ int main(){
 
     string word;
     vector<string> text;
-    while (cin >> word)
+    while (cin >> word) {
         if (word == "q") break;
         text.push_back(word);
+    }
+    for(auto &s: text){
+        transform(s.begin(), s.end(), s.begin(), ::toupper);
+        cout << s << " ";
+        printf("%s ", s.c_str());
+    }
+
+    //    vector::size_type  n = text.size(); 错误写法
+    vector<string>::size_type n = text.size();
+    int n1 = text.size();
+    decltype(text.size()) n2 = text.size();
+    cout << n << " " << n1 << " " << n2 << endl;
+
+    vector<unsigned> score(11, 0);
+    unsigned grade;
+//    while(cin >> grade){
+//        if(grade <= 100)
+//            ++score[grade/10];
+//        else break;
+//    }
+//  exercise 3.19
+    vector<int> e319{42,42,42,42,42,42,42,42,42,42};
+    vector<int> e319_(10, 42);  // i think this is the best
+    vector<int> e319__;
+    for(int i = 0; i < 10; i++) e319__.push_back(42);
 
 
 
