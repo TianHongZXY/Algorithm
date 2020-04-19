@@ -9,7 +9,7 @@ using namespace std;
 
 int main(){
     vector<int> ivec;
-    vector<vector<string>> file;
+    vector<vector<string> > file;
     vector<int> v1;
     vector<int> v2(v1); // equal to vector<int> v2 = v1;
     vector<double> v3(10, 3.14);
@@ -63,7 +63,7 @@ int main(){
 //            ++score[grade/10];
 //        else break;
 //    }
-//  exercise 3.19
+//  exercise 3-19
     vector<int> e319{42,42,42,42,42,42,42,42,42,42};
     vector<int> e319_(10, 42);  // i think this is the best
     vector<int> e319__;
