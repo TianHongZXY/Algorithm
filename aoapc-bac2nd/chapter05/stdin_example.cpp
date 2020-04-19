@@ -43,6 +43,7 @@ int main(){
 //    cin.getline()会读取结束符并清除，不会将结束符或者换行符残留在输入缓冲区中。
 //    cin.getline()属于istream流，而getline()属于string流，是不一样的两个函数。
     char a4[20];
+//  注意，读取了20个字符，包括了结尾的结束符，所以相当于只读取了19个字符！
     cin.getline(a4, 20, '\n');
     return 0;
 }
