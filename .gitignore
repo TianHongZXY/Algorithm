@@ -14,3 +14,4 @@ a.out
 !/aoapc-bac2nd/chapter ?/*.cpp
 *.txt
 build/
+.history/
