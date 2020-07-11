@@ -1,8 +1,34 @@
 #include <cstdio>
 #include <cstring>
+#include <vector>
+#include <string>
+using namespace std;
 int tot, n;
 int C[100];
 int vis[3][100];
+
+/* 是否可以在 board[row][col] 放置皇后？ */
+bool isValid(vector<string>& board, int row, int col) {
+    int n = board.size();
+    // 检查列是否有皇后互相冲突
+    for (int i = 0; i < n; i++) {
+        if (board[i][col] == 'Q')
+            return false;
+    }
+    // 检查右上方是否有皇后互相冲突
+    for (int i = row - 1, j = col + 1; 
+            i >= 0 && j < n; i--, j++) {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+    // 检查左上方是否有皇后互相冲突
+    for (int i = row - 1, j = col - 1;
+            i >= 0 && j >= 0; i--, j--) {
+        if (board[i][j] == 'Q')
+            return false;
+    }
+    return true;
+}
 
 void search(int cur){
     if(cur == n) tot++;

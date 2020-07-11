@@ -5,6 +5,7 @@
 using namespace std;
 
 void sprintf_example(){ // 数字 --> 字符串
+
     int H, M, S, seconds;
     scanf("%d", &seconds);
     string time_str;
