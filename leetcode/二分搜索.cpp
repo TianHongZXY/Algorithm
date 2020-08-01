@@ -29,7 +29,7 @@ int lower_bound(int nums[], int n, int target){
     while(left < right){ // 当搜索的区间为[left, left)时为空，退出循环
         int mid = left + (right - left) / 2; // mid在中间靠左，等于在往左边收缩，等于收缩右边界
         if(nums[mid] >= target){
-            right = mid; // 保证right始终是大于等于target的。因为搜索区间为左闭右开，这时相当于把区间缩到[left, mid)，排除了mid
+            right = mid; // 因为搜索区间为左闭右开，这时相当于把区间缩到[left, mid)，而right始终在搜索右边界保持大于等于target，除非left也越界不然不会碰头
         }
         else if(nums[mid] < target){
             left = mid + 1; // 收缩左边界
