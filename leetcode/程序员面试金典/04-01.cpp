@@ -6,9 +6,9 @@ using namespace std;
 
 class Solution {
 public:
-bool findWhetherExistsPath(int n, vector<vector<int>>& graph, int start, int target) {
+bool findWhetherExistsPath(int n, vector<vector<int> >& graph, int start, int target) {
     vis = vector<bool>(n, false);
-    neigh = vector<unordered_set<int>>(n);
+    neigh = vector<unordered_set<int> >(n);
     for(const auto& x : graph){
         neigh[x[0]].insert(x[1]);
     }
@@ -28,6 +28,6 @@ bool findWhetherExistsPath(int n, vector<vector<int>>& graph, int start, int tar
     return false;
 }
 private:
-    vector<unordered_set<int>> neigh;
+    vector<unordered_set<int> > neigh;
     vector<bool> vis;
 };
