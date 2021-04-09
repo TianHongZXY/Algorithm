@@ -15,9 +15,9 @@ class Solution {
 public:
 
     int helper(TreeNode* root, int cur, int sum, unordered_map<int, int>& mp) {
-        int res = 0;
         if(!root) return 0;
         cur += root->val;
+        int res = 0;
         if(mp.count(cur - sum)) res += mp[cur - sum];
         mp[cur] += 1;
         res += helper(root->left, cur, sum, mp);
