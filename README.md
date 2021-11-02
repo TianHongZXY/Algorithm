@@ -1,7 +1,5 @@
 # 算法笔记
 
----
-
 # 链表
 
 ### 常见方法
@@ -92,4 +90,4 @@
 
 ### 例题
 
-- [Permutation I LCCI](https://leetcode-cn.com/problems/permutation-i-lcci/)，[Solution](Algorithm/tree/master/leetcode/程序员面试金典/08-07.cpp)
+- [Permutation I LCCI](https://leetcode-cn.com/problems/permutation-i-lcci/)，[Solution](leetcode/程序员面试金典/08-07.cpp)
